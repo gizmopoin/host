@@ -3,7 +3,7 @@
 var FIXED_MENU = true; // to disable the fixed menu, replace "true" for "false"
 var IMAGE_ANIMATE = true; // to disable the image animation, replace "true" for "false"
 var MONTH_FORMAT = [, "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]; // months formats to translation or change to another format
-var NO_IMAGE = "//cdn.rawgit.com/gizmopoin/weblog-host/a02077d2/no_thumb.png"; // default no image
+var NO_IMAGE = "//cdn.rawgit.com/gizmopoin/host/895ec5f5/no_thumb.png"; // default no image
 var SORABOX_NUM = 5; // default number "no change"
 var VIDEOS_NUM = 3; // default number "no change"
 var CAROUSEL_NUM = 3; // show number of results carousel, default is "6"
@@ -75,7 +75,7 @@ $(document).ready(function() {
     });
     $(".index .post-outer,.archive .post-outer").each(function() {
         $(this).find(".block-image .thumb a").attr("style", function(a, b) {
-            return b.replace("//cdn.rawgit.com/gizmopoin/weblog-host/a02077d2/no_thumb.png", "" + NO_IMAGE + "")
+            return b.replace("//cdn.rawgit.com/gizmopoin/host/895ec5f5/no_thumb.png", "" + NO_IMAGE + "")
         })
     });
     $('.PopularPosts ul li img').each(function() {
@@ -89,7 +89,7 @@ $(document).ready(function() {
     $(".sidebar .widget h2,.sect-left .widget h2").wrap("<div class='title-wrap'/>");
     $('.avatar-image-container img').each(function() {
         $(this).attr('src', function(i, src) {
-            return src.replace('//img1.blogblog.com/img/blank.gif', '//cdn.rawgit.com/gizmopoin/weblog-host/a02077d2/avatar_45.png')
+            return src.replace('//img1.blogblog.com/img/blank.gif', '//cdn.rawgit.com/gizmopoin/host/d2f81658/avatar_45.png')
         }).attr('src', function(i, src) {
             return src.replace('/s35', '/s45')
         })
@@ -168,10 +168,10 @@ $('.ready-widget .HTML .widget-content #recentcomments').each(function() {
                 var y = e.feed.entry[i].author[0].name.$t;
                 var yk = e.feed.entry[i].author[0].gd$image.src;
                 if (yk.match('http://img1.blogblog.com/img/blank.gif')) {
-                    var k = 'http://cdn.rawgit.com/gizmopoin/weblog-host/a02077d2/avatar_55.png'
+                    var k = 'http://cdn.rawgit.com/gizmopoin/host/bb515841/avatar_55.png'
                 } else {
                     if (yk.match('http://img2.blogblog.com/img/b16-rounded.gif')) {
-                        var k = 'http://cdn.rawgit.com/gizmopoin/weblog-host/a02077d2/avatar_55.png'
+                        var k = 'http://cdn.rawgit.com/gizmopoin/host/bb515841/avatar_55.png'
                     } else {
                         var k = yk
                     }
