@@ -437,7 +437,7 @@ $('.ready-widget .HTML .widget-content #recentposts').each(function() {
 });
 $(".recent-boxes .HTML .widget-content").each(function() {
     var bl = $(this).find("span").attr("data-label"),
-        b1 = "box",
+        b1 = "sorabox",
         b2 = "videos",
         b3 = "carousel",
         bt = $(this).prev("h2").text(),
@@ -445,7 +445,7 @@ $(".recent-boxes .HTML .widget-content").each(function() {
         box = $(this).find("span").attr("id");
     if (box.match(b1)) {
         $.ajax({
-            url: "/feeds/posts/default/-/" + bl + "?alt=json-in-script&max-results=" + BOX_NUM,
+            url: "/feeds/posts/default/-/" + bl + "?alt=json-in-script&max-results=" + SORABOX_NUM,
             type: 'get',
             dataType: "jsonp",
             success: function(e) {
